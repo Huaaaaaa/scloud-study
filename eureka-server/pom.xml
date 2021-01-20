@@ -8,6 +8,7 @@
         <version>2.1.5.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+    <packaging>jar</packaging>
     <groupId>com.cyh.scloud</groupId>
     <artifactId>eureka-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
@@ -53,13 +54,24 @@
                 </configuration>
             </plugin>
         </plugins>
+
         <resources>
             <resource>
-                <directory>src/main/java</directory>
+                <directory>src/main/resources</directory>
                 <includes>
-                    <include>**/*.xml</include>
+                    <include>*.yml</include>
+                    <include>**/*.yml</include>
                 </includes>
-                <filtering>true</filtering>
+                <!--
+                <excludes>
+                   <exclude>**/*.properties</exclude>
+                   <exclude>**/*.yml</exclude>
+                    <exclude>*.properties</exclude>
+                    <exclude>*.conf</exclude>
+                    <exclude>*.yml</exclude>
+                    <exclude>generator/*.*</exclude>
+                </excludes>
+                -->
             </resource>
         </resources>
     </build>

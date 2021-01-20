@@ -1,10 +1,10 @@
 server:
-  port: 8082
+  port: 1113
 
 spring:
   application:
-    name: scloud-common
+    name: common
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:1110/eureka/
+      defaultZone: http://peer1:1110/eureka/,http://peer2:1111/eureka/
