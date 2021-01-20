@@ -1,19 +1,20 @@
-package com.cyh.scloud.base.controller;
+package com.cyh.scloud.common.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @author: cyhua
- * @createTime: 2021/1/20
- * @description:
+ * Author: huayingcao2
+ * Date:  2021/1/20
+ * Todo:
+ * Time 12:33
  */
-
 @RestController
-public class IndexConroller {
+public class IndexController {
+
 
     @GetMapping("/index")
     public String index() {
-        return "Hello Spring Cloud";
+        return "Scloud-common is alive";
     }
 }
