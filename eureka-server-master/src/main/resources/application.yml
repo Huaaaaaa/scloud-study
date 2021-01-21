@@ -1,0 +1,32 @@
+server:
+  port: 1110
+spring:
+  application:
+    name: eureka-server-master
+#management:
+#  server:
+#    servlet:
+#      context-path: /base  #设置contextPath,一般情况下不会设置
+#  endpoints:
+#    web:
+#      path-mapping:
+#        info: /appInfo
+#        health: /checkHealth
+eureka:
+  server:
+    enable-self-preservation: false  #注册中心的保护机制，将当前实例的注册信息保存起来，让这些实例不会过期，true时开启
+  instance:
+    hostname: peer1
+    #lease-renewal-interval-in-seconds: 30 #服务续约任务执行间隔，默认30s
+    #lease-expiration-duration-in-seconds: 90 #服务失效时间，默认90s
+    #instance-id: ${spring.application.name}:${random.int}  #
+    #status-page-url-path: ${management.server.servlet.context-path}${management.endpoints.web.path-mapping.info} #配置端点
+    #health-check-url-path: ${management.server.servlet.context-path}${management.endpoints.web.path-mapping.health}
+  client:
+    register-with-eureka: true   #提供服务注册和服务续约功能
+    fetch-registry: true         #供服务消费者获取服务列表
+    service-url:
+      defaultZone: http://peer2:1111/eureka/
+    registry-fetch-interval-seconds: 30 #默认30s，只读服务清单缓存时间（每这个时间更新一次清单）
+    healthcheck:
+      enabled: true  #开启客户端健康状态监测

@@ -1,0 +1,11 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: provider-base
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:1110/eureka/,http://peer2:1111/eureka/
+    #region: default  #微服务的region，不设置时使用默认值，一个微服务只能有一个region
+    #availability-zones:  #设置zone，不设置使用默认值，可以配置多个，用逗号分隔
