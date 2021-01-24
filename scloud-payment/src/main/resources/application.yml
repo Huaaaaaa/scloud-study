@@ -1,0 +1,27 @@
+server:
+  port: 3030
+
+spring:
+  application:
+    name: scloud-payment
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://127.0.0.1:3306/sloud?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&allowMultiQueries=true
+    username: root
+    password: 123456
+    driverClassName: com.mysql.cj.jdbc.Driver
+    initialSize: 5
+    minIdle: 1
+    maxActive: 25
+    maxWait: 60000
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+    hibernate.ddl-auto: create
+    open-in-view: false
+    hibernate:
+      ddl-auto: none
+      hibernate:
+        hbm2ddl.auto: none
+        enable_lazy_load_no_trans: true
+      show-sql: true

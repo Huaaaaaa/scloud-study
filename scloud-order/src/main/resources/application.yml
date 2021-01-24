@@ -1,0 +1,6 @@
+server:
+  port: 30
+
+spring:
+  application:
+    name: scloud-order-30
