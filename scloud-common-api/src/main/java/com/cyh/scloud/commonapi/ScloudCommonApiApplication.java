@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class ScloudCommonApiApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(ScloudCommonApiApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(ScloudCommonApiApplication.class, args);
+    }
 
 }

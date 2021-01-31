@@ -16,6 +16,7 @@ public class HttpConfig {
 
     /**
      * 支持负载均衡
+     *
      * @return
      */
     @Bean

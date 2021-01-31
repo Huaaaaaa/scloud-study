@@ -21,7 +21,7 @@ eureka:
     #lease-expiration-duration-in-seconds: 90 #服务失效时间，默认90s
     #instance-id: ${spring.application.name}:${random.int}  #
     #status-page-url-path: ${management.server.servlet.context-path}${management.endpoints.web.path-mapping.info} #配置端点
-   #health-check-url-path: ${management.server.servlet.context-path}${management.endpoints.web.path-mapping.health}
+    #health-check-url-path: ${management.server.servlet.context-path}${management.endpoints.web.path-mapping.health}
   client:
     register-with-eureka: true   #提供服务注册和服务续约功能
     fetch-registry: true         #供服务消费者获取服务列表

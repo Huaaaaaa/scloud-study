@@ -12,12 +12,14 @@ public interface OrderPaymentService {
 
     /**
      * 生成支付流水
+     *
      * @return
      */
     ReturnResult<ScloudPayment> generatePayRecord(String orderNumber, String payer);
 
     /**
      * 查询支付流水
+     *
      * @param payNumber
      * @return
      */

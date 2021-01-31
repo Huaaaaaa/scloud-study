@@ -4,6 +4,8 @@ spring:
   application:
     name: provider-base
 eureka:
+  instance:
+    hostname: provider-base
   client:
     serviceUrl:
       defaultZone: http://peer1:1110/eureka/,http://peer2:1111/eureka/

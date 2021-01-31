@@ -19,6 +19,7 @@ public class PayController extends BaseController {
 
     /**
      * 支付订单
+     *
      * @param orderNumber
      * @return
      */
@@ -30,6 +31,7 @@ public class PayController extends BaseController {
 
     /**
      * 支付订单
+     *
      * @param orderNumber
      * @return
      */
@@ -41,6 +43,7 @@ public class PayController extends BaseController {
 
     /**
      * 获取支付结果
+     *
      * @param paymentNumber
      * @return
      */

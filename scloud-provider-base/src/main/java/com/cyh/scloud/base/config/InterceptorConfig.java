@@ -26,12 +26,12 @@ public class InterceptorConfig implements WebMvcConfigurer {
     }
 
     @Bean
-    public BaseInterceptor baseInterceptor(){
-        return  new BaseInterceptor();
+    public BaseInterceptor baseInterceptor() {
+        return new BaseInterceptor();
     }
 
     @Override
-    public void addInterceptors(InterceptorRegistry registry){
+    public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(baseInterceptor()).order(Ordered.HIGHEST_PRECEDENCE).addPathPatterns("/**");
     }
 

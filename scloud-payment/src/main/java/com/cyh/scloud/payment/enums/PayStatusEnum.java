@@ -32,7 +32,7 @@ public enum PayStatusEnum {
         return mesage;
     }
 
-    public static PayStatusEnum getByStatus(int status){
-        return Arrays.stream(PayStatusEnum.values()).filter(payStatusEnum -> payStatusEnum.getStatus()==status).findFirst().get();
+    public static PayStatusEnum getByStatus(int status) {
+        return Arrays.stream(PayStatusEnum.values()).filter(payStatusEnum -> payStatusEnum.getStatus() == status).findFirst().get();
     }
 }

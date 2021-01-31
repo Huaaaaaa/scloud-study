@@ -4,8 +4,6 @@ import com.cyh.scloud.commonapi.enums.ResultCode;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.apache.ibatis.annotations.ConstructorArgs;
-import org.springframework.boot.convert.DataSizeUnit;
 
 import java.io.Serializable;
 import java.util.Map;
