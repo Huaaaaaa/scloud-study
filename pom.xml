@@ -24,6 +24,8 @@
         <module>scloud-order</module>
         <module>scloud-payment</module>
         <module>scloud-common-api</module>
+        <module>scloud-hystrix-dashboard</module>
+        <module>scloud-turbine</module>
     </modules>
     <!--<properties>
         <java.version>1.8</java.version>
